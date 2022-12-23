@@ -23,6 +23,7 @@ namespace Tiny_Compiler_Project
             string Code = textBox1.Text;
             Tiny_Compiler_Project.Start_Compiling(Code);
             PrintTokens();
+            treeView1.Nodes.Add(Parser.PrintParseTree(Tiny_Compiler_Project.treeroot));
             PrintErrors();
         }
         void PrintTokens()

@@ -9,3 +9,14 @@ D:\FCIS2024\3rd year\Compiler Theory\project\[2021-2022] TINY_Compiler_Project\T
 D:\FCIS2024\3rd year\Compiler Theory\project\[2021-2022] TINY_Compiler_Project\Tiny_Compiler_Project\obj\Debug\Tiny_Compiler_Project.csproj.CoreCompileInputs.cache
 D:\FCIS2024\3rd year\Compiler Theory\project\[2021-2022] TINY_Compiler_Project\Tiny_Compiler_Project\obj\Debug\Tiny_Compiler_Project.exe
 D:\FCIS2024\3rd year\Compiler Theory\project\[2021-2022] TINY_Compiler_Project\Tiny_Compiler_Project\obj\Debug\Tiny_Compiler_Project.pdb
+D:\FCIS2024\3rd year\Compiler Theory\2022_TINY_Compiler_Project\[2021-2022] TINY_Compiler_Project\Tiny_Compiler_Project\bin\Debug\Tiny_Compiler_Project.exe.config
+D:\FCIS2024\3rd year\Compiler Theory\2022_TINY_Compiler_Project\[2021-2022] TINY_Compiler_Project\Tiny_Compiler_Project\bin\Debug\Tiny_Compiler_Project.exe
+D:\FCIS2024\3rd year\Compiler Theory\2022_TINY_Compiler_Project\[2021-2022] TINY_Compiler_Project\Tiny_Compiler_Project\bin\Debug\Tiny_Compiler_Project.pdb
+D:\FCIS2024\3rd year\Compiler Theory\2022_TINY_Compiler_Project\[2021-2022] TINY_Compiler_Project\Tiny_Compiler_Project\obj\Debug\Tiny_Compiler_Project.csproj.AssemblyReference.cache
+D:\FCIS2024\3rd year\Compiler Theory\2022_TINY_Compiler_Project\[2021-2022] TINY_Compiler_Project\Tiny_Compiler_Project\obj\Debug\Tiny_Compiler_Project.csproj.SuggestedBindingRedirects.cache
+D:\FCIS2024\3rd year\Compiler Theory\2022_TINY_Compiler_Project\[2021-2022] TINY_Compiler_Project\Tiny_Compiler_Project\obj\Debug\Tiny_Compiler_Project.Form1.resources
+D:\FCIS2024\3rd year\Compiler Theory\2022_TINY_Compiler_Project\[2021-2022] TINY_Compiler_Project\Tiny_Compiler_Project\obj\Debug\Tiny_Compiler_Project.Properties.Resources.resources
+D:\FCIS2024\3rd year\Compiler Theory\2022_TINY_Compiler_Project\[2021-2022] TINY_Compiler_Project\Tiny_Compiler_Project\obj\Debug\Tiny_Compiler_Project.csproj.GenerateResource.cache
+D:\FCIS2024\3rd year\Compiler Theory\2022_TINY_Compiler_Project\[2021-2022] TINY_Compiler_Project\Tiny_Compiler_Project\obj\Debug\Tiny_Compiler_Project.csproj.CoreCompileInputs.cache
+D:\FCIS2024\3rd year\Compiler Theory\2022_TINY_Compiler_Project\[2021-2022] TINY_Compiler_Project\Tiny_Compiler_Project\obj\Debug\Tiny_Compiler_Project.exe
+D:\FCIS2024\3rd year\Compiler Theory\2022_TINY_Compiler_Project\[2021-2022] TINY_Compiler_Project\Tiny_Compiler_Project\obj\Debug\Tiny_Compiler_Project.pdb
