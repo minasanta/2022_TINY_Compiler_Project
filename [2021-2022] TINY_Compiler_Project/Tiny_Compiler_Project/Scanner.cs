@@ -160,22 +160,26 @@ namespace Tiny_Compiler_Project
                     {
                         CurrentLexeme += SourceCode[j].ToString();
                         FindTokenClass(CurrentLexeme);
+                        i = j - 1;
                     }
                     else if (j < SourceCode.Length && CurrentChar == '<' && SourceCode[j] == '>')
                     {
                         CurrentLexeme += SourceCode[j].ToString();
                         FindTokenClass(CurrentLexeme);
+                        i = j;
                     }
                     else if (j < SourceCode.Length && CurrentChar == '>' && SourceCode[j] == '<')
                     {
                         CurrentLexeme += SourceCode[j].ToString();
                         FindTokenClass(CurrentLexeme);
+                        i = j - 1;
                     }
                     else
                     {
                         FindTokenClass(CurrentLexeme);
+                        i = j - 1;
                     }
-                    i = j - 1;
+                    
 
                 }
 

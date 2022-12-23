@@ -60,7 +60,7 @@ namespace Tiny_Compiler_Project
 
         Node before_main()
         {
-            Node before = new Node("Before Main");
+            Node before = new Node("Functions Decleration Section");
             if (InputPointer + 1 < TokenStream.Count && Token_Class.Idenifier == TokenStream[InputPointer + 1].token_type)
             {
                 before.Children.Add(Function_Statements());
@@ -70,7 +70,7 @@ namespace Tiny_Compiler_Project
 
         Node Function_Statements() 
         {
-            Node Function = new Node("Function");
+            Node Function = new Node("Functions");
             Function.Children.Add(Function_Statement());
             Function.Children.Add(Fun_Ss());
             return Function;
@@ -79,7 +79,7 @@ namespace Tiny_Compiler_Project
         
         Node Fun_Ss()
         {
-            Node Function = new Node("More Functions");
+            Node Function = new Node("Function");
             if (InputPointer + 1 < TokenStream.Count && Token_Class.Idenifier == TokenStream[InputPointer + 1].token_type)
             {
                 Function.Children.Add(Function_Statement());
@@ -105,6 +105,7 @@ namespace Tiny_Compiler_Project
                 decleration.Children.Add(match(Token_Class.RParanthesis));
             else
                 decleration.Children.Add(Argument());
+            decleration.Children.Add(match(Token_Class.RParanthesis));
             return decleration;
         }
 
@@ -451,11 +452,15 @@ namespace Tiny_Compiler_Project
             {
                 term.Children.Add(match(Token_Class.Number));
             }
-            else if (InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type == Token_Class.Idenifier)
+            else if (InputPointer + 1 < TokenStream.Count && TokenStream[InputPointer + 1].token_type == Token_Class.LParanthesis)
+            {
+                term.Children.Add(Function_Call());
+            }
+            else
             {
                 term.Children.Add(match(Token_Class.Idenifier));
             }
-            else term.Children.Add(Function_Call());
+            
             return term;
         }
 
@@ -472,6 +477,7 @@ namespace Tiny_Compiler_Project
                 call.Children.Add(Term());
                 call.Children.Add(Paramter());
             }
+            call.Children.Add(match(Token_Class.RParanthesis));
             return call;
         }
 
