@@ -21,6 +21,11 @@ Then we created the the code part pased on this RE & DFA to be ready for second 
 
 #### Second part
 ***
+The parser part, in this part we toke the Tokens that we created and gathered from scanner part and use it to create a parse tree
+
+First we made CFG for the tiny language that describe the grammer (syntax) then we removed the ambiguity for grammar
+
+Then covered this grammar to code using a Top-Down parser, A top-down parser builds the parse tree from the top to down, starting with the start non-terminal using leftmost parsing
 
 ### Team Members
 ***
