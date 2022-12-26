@@ -104,8 +104,10 @@ namespace Tiny_Compiler_Project
             if (InputPointer < TokenStream.Count && Token_Class.RParanthesis == TokenStream[InputPointer].token_type)
                 decleration.Children.Add(match(Token_Class.RParanthesis));
             else
+            {
                 decleration.Children.Add(Argument());
-            decleration.Children.Add(match(Token_Class.RParanthesis));
+                decleration.Children.Add(match(Token_Class.RParanthesis));
+            }
             return decleration;
         }
 
@@ -471,16 +473,14 @@ namespace Tiny_Compiler_Project
             // Identifier (Term  paramter| Ɛ )
             call.Children.Add(match(Token_Class.Idenifier));
             call.Children.Add(match(Token_Class.LParanthesis));
-            if (InputPointer < TokenStream.Count && Token_Class.RParanthesis == TokenStream[InputPointer].token_type)
-                call.Children.Add(match(Token_Class.RParanthesis));
-            else 
+            if (InputPointer < TokenStream.Count && Token_Class.RParanthesis != TokenStream[InputPointer].token_type)
             {
                 call.Children.Add(Term());
                 call.Children.Add(Paramter());
             }
             call.Children.Add(match(Token_Class.RParanthesis));
-            return call;
-        }
+            return call;
+        }
 
         Node Paramter() 
         {
