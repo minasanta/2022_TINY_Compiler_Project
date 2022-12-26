@@ -136,6 +136,7 @@ namespace Tiny_Compiler_Project
             Node func_body = new Node("Function Body");
             func_body.Children.Add(match(Token_Class.LCurly));
             func_body.Children.Add(Statements());
+            func_body.Children.Add(Return_Statement());
             func_body.Children.Add(match(Token_Class.RCurly));
             return func_body;
         }
@@ -201,11 +202,11 @@ namespace Tiny_Compiler_Project
                     statement.Children.Add(Declaration_Statement());
                     return statement;
                 }
-                else if (Token_Class.Return == TokenStream[InputPointer].token_type)
-                {
-                    statement.Children.Add(Return_Statement());
-                    return statement;
-                }
+                //else if (Token_Class.Return == TokenStream[InputPointer].token_type)
+                //{
+                //    statement.Children.Add(Return_Statement());
+                //    return statement;
+                //}
                 else if (Token_Class.Repeat == TokenStream[InputPointer].token_type)
                 {
                     statement.Children.Add(Repeat_Statement());
@@ -224,7 +225,7 @@ namespace Tiny_Compiler_Project
                 if (TokenStream[InputPointer].token_type == Token_Class.Write || TokenStream[InputPointer].token_type == Token_Class.Read
                    || TokenStream[InputPointer].token_type == Token_Class.If || TokenStream[InputPointer].token_type == Token_Class.Idenifier
                    || Token_Class.Integer == TokenStream[InputPointer].token_type || Token_Class.Float == TokenStream[InputPointer].token_type 
-                   || Token_Class.String == TokenStream[InputPointer].token_type || Token_Class.Return == TokenStream[InputPointer].token_type
+                   || Token_Class.String == TokenStream[InputPointer].token_type //|| Token_Class.Return == TokenStream[InputPointer].token_type
                    || Token_Class.Repeat == TokenStream[InputPointer].token_type)
                 {
                     state.Children.Add(Statement());

@@ -48,7 +48,9 @@ namespace Tiny_Compiler_Project
             dataGridView1.Rows.Clear();
             textBox2.Text = "";
             Errors.Error_List.Clear();
+            treeView1.Nodes.Clear();
             Tiny_Compiler_Project.TokenStream.Clear();
+
         }
     }
 }
