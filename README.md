@@ -37,6 +37,3 @@ Then covered this grammar to code using a Top-Down parser, A top-down parser bui
 | Filobateer Essam  | @<a href="https://github.com/FilobateerEssam/" target="_blank">FilobateerEssam</a> |
 | Martina Sabry  | ___ |
 | Marlen Tawadrous  | ___ |
-<a href="https://github.com/minasanta/2022_TINY_Compiler_Project">
-  <img src="https://contrib.rocks/image?repo=minasanta/2022_TINY_Compiler_Project" />
-</a> 
