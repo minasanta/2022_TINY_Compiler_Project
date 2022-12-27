@@ -122,7 +122,7 @@ namespace Tiny_Compiler_Project
         }
         Node Args()
         {
-            Node args = new Node("Argument ");
+            Node args = new Node("Argument");
             if (InputPointer < TokenStream.Count && Token_Class.Comma == TokenStream[InputPointer].token_type)
             {
                 args.Children.Add(match(Token_Class.Comma));
@@ -204,11 +204,6 @@ namespace Tiny_Compiler_Project
                     statement.Children.Add(Declaration_Statement());
                     return statement;
                 }
-                //else if (Token_Class.Return == TokenStream[InputPointer].token_type)
-                //{
-                //    statement.Children.Add(Return_Statement());
-                //    return statement;
-                //}
                 else if (Token_Class.Repeat == TokenStream[InputPointer].token_type)
                 {
                     statement.Children.Add(Repeat_Statement());
@@ -227,8 +222,7 @@ namespace Tiny_Compiler_Project
                 if (TokenStream[InputPointer].token_type == Token_Class.Write || TokenStream[InputPointer].token_type == Token_Class.Read
                    || TokenStream[InputPointer].token_type == Token_Class.If || TokenStream[InputPointer].token_type == Token_Class.Idenifier
                    || Token_Class.Integer == TokenStream[InputPointer].token_type || Token_Class.Float == TokenStream[InputPointer].token_type 
-                   || Token_Class.String == TokenStream[InputPointer].token_type //|| Token_Class.Return == TokenStream[InputPointer].token_type
-                   || Token_Class.Repeat == TokenStream[InputPointer].token_type)
+                   || Token_Class.String == TokenStream[InputPointer].token_type || Token_Class.Repeat == TokenStream[InputPointer].token_type)
                 {
                     state.Children.Add(Statement());
                     state.Children.Add(State());
@@ -616,8 +610,8 @@ namespace Tiny_Compiler_Project
 
                 else
                 {
-                    Errors.Error_List.Add("Parsing Error: Expected "
-                        + ExpectedToken.ToString() + " and " +
+                    Errors.Error_List.Add("Parsing Error: Expected " + 
+                        ExpectedToken.ToString() + " and " +
                         TokenStream[InputPointer].token_type.ToString() +
                         "  found\r\n");
                     InputPointer++;
@@ -626,8 +620,8 @@ namespace Tiny_Compiler_Project
             }
             else
             {
-                Errors.Error_List.Add("Parsing Error: Expected "
-                        + ExpectedToken.ToString() + "\r\n");
+                Errors.Error_List.Add("Parsing Error: Expected " + 
+                    ExpectedToken.ToString() + "\r\n");
                 InputPointer++;
                 return null;
             }
